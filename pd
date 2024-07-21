@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque de Diversiones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white; /* Color de texto blanco */
+        }
+        header {
+            background-color: rgba(62, 37, 150, 0.8); /* Color del fondo del encabezado con transparencia */
+            color: white; /* Color del texto del encabezado */
+            padding: 1em 0;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+        header img {
+            width: 150px; /* Ajusta el tamaño de la imagen según tus necesidades */
+            height: auto;
+        }
+        nav {
+            background-color: rgba(75, 0, 130, 0.8); /* Color del fondo del menú de navegación con transparencia */
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #6a0dad; /* Color de fondo al pasar el mouse */
+            color: white;
+        }
+        .main {
+            padding: 20px;
+            position: relative;
+            z-index: 2;
+        }
+        .attraction {
+            background-color: rgba(93, 63, 211, 0.8); /* Color del fondo de las secciones con transparencia */
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: rgba(75, 0, 130, 0.8); /* Color del fondo del pie de página con transparencia */
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            z-index: 2;
+        }
+        .video-background {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: 1;
+        }
+        .info {
+            position: relative;
+            z-index: 2;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+        }
+    </style>
+</head>
+<body>
+
+<video autoplay muted loop class="video-background">
+    <source src="asset-qs1_1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+<div class="info">
+    <h2>Bienvenidos</h2>
+    <p>Disfruta de un día lleno de diversión y aventuras en nuestro parque de diversiones.</p>
+
+    <h2>Atracciones</h2>
+    <div class="attraction">
+        <h3>Montaña Rusa</h3>
+        <p>Experimenta la adrenalina en nuestra emocionante montaña rusa.</p>
+    </div>
+    <div class="attraction">
+        <h3>Noria Gigante</h3>
+        <p>Disfruta de vistas panorámicas desde lo alto de nuestra noria gigante.</p>
+    </div>
+    <div class="attraction">
+        <h3>Casa del Terror</h3>
+        <p>Vive una experiencia aterradora en nuestra casa del terror.</p>
+    </div>
+
+    <h2>Contacto</h2>
+    <p>Para más información, puedes contactarnos a través del siguiente correo electrónico: <a href="mailto:info@parque.com">info@parque.com</a></p>
+</div>
+
+<header>
+    <img src="logo.png" alt="Parque de Diversiones Logo">
+    <h1>Parque de Diversiones</h1>
+</header>
+
+<nav>
+    <a href="#home">Inicio</a>
+    <a href="#attractions">Atracciones</a>
+    <a href="#contact">Contacto</a>
+</nav>
+
+<div class="main">
+    <section id="home">
+        <h2>Bienvenidos</h2>
+        <p>Disfruta de un día lleno de diversión y aventuras en nuestro parque de diversiones.</p>
+    </section>
+
+    <section id="attractions">
+        <h2>Atracciones</h2>
+        <div class="attraction">
+            <h3>Montaña Rusa</h3>
+            <p>Experimenta la adrenalina en nuestra emocionante montaña rusa.</p>
+        </div>
+        <div class="attraction">
+            <h3>Noria Gigante</h3>
+            <p>Disfruta de vistas panorámicas desde lo alto de nuestra noria gigante.</p>
+        </div>
+        <div class="attraction">
+            <h3>Casa del Terror</h3>
+            <p>Vive una experiencia aterradora en nuestra casa del terror.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contacto</h2>
+        <p>Para más información, puedes contactarnos a través del siguiente correo electrónico: <a href="mailto:info@parque.com">info@parque.com</a></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2024 Parque de Diversiones. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
+
